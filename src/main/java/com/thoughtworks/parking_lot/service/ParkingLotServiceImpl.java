@@ -25,4 +25,10 @@ public class ParkingLotServiceImpl implements ParkingLotService{
         parkingLotRepository.delete(parkingLot);
     }
 
+    @Override
+    public ParkingLot getParkingLotByName(String name) {
+        return parkingLotRepository.findByName(name);
+    }
+
+
 }

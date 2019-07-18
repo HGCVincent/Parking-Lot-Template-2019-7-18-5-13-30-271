@@ -64,11 +64,35 @@ public class ParkingLotControllerTest {
                 "\"capacity\": 1,\n" +
                 "\"address\": \"zh\"\n" +
                 "}";
+
+        doNothing().when(parkingLotService).deleteParkingLot(any());
         mvc.perform(post("/parkingLots").contentType(MediaType.APPLICATION_JSON).content(parkingLotJson));
         mvc.perform(delete("/parkingLots").contentType(MediaType.APPLICATION_JSON).content(parkingLotJson));
 
-        doNothing().when(parkingLotService).deleteParkingLot(any());
-
         verify(parkingLotService).deleteParkingLot(any());
     }
+
+    @Test
+    public void should_find_parkingLot_by_name() throws Exception {
+        ParkingLot parkingLot =new ParkingLot();
+        parkingLot.setName("zhuhai");
+        parkingLot.setAddress("zh");
+        parkingLot.setCapacity(1);
+
+        String parkingLotJson = "{\n" +
+                "\"name\": \"zhuhai\",\n" +
+                "\"capacity\": 1,\n" +
+                "\"address\": \"zh\"\n" +
+                "}";
+        when(parkingLotService.getParkingLotByName(any())).thenReturn(parkingLot);
+
+        mvc.perform(post("/parkingLots").contentType(MediaType.APPLICATION_JSON).content(parkingLotJson));
+        ResultActions result = mvc.perform(get("/parkingLots/{name}","zhuhai"));
+
+        result.andExpect(status().isOk()).andExpect(jsonPath("$.address",is("zh")));
+
+        verify(parkingLotService).getParkingLotByName(any());
+    }
+
+
 }

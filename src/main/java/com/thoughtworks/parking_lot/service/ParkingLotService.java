@@ -9,5 +9,6 @@ public interface ParkingLotService {
 
     void deleteParkingLot(ParkingLot parkingLot);
 
-    
+
+    ParkingLot getParkingLotByName(String name);
 }
