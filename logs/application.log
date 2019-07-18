@@ -8554,3 +8554,532 @@ Caused by: org.hibernate.boot.model.naming.IllegalIdentifierException: Identifie
 2019-07-18 18:54:15.599 DEBUG 11776 --- [Thread-2] org.hibernate.engine.spi.CascadeStyles   : External cascade style registration [persist : STYLE_PERSIST] overrode base registration [STYLE_PERSIST_SKIPLAZY]
 2019-07-18 18:54:15.600 DEBUG 11776 --- [Thread-2] o.h.s.i.AbstractServiceRegistryImpl      : Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
 2019-07-18 18:54:15.600 DEBUG 11776 --- [Thread-2] o.h.b.r.i.BootstrapServiceRegistryImpl   : Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+2019-07-18 18:59:31.945 DEBUG 7492 --- [background-preinit] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2019-07-18 18:59:31.953 DEBUG 7492 --- [background-preinit] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2019-07-18 18:59:31.953 DEBUG 7492 --- [background-preinit] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2019-07-18 18:59:31.954 DEBUG 7492 --- [background-preinit] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2019-07-18 18:59:31.954 DEBUG 7492 --- [background-preinit] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2019-07-18 18:59:31.954 DEBUG 7492 --- [background-preinit] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2019-07-18 18:59:32.080  INFO 7492 --- [main] c.t.p.R.ParkingLotRepositoryTets         : Starting ParkingLotRepositoryTets on ZHA-ITA073-W10 with PID 7492 (started by HUANGVI7 in D:\task\Parking-Lot-Template-2019-7-18-5-13-30-271)
+2019-07-18 18:59:32.089  INFO 7492 --- [main] c.t.p.R.ParkingLotRepositoryTets         : No active profile set, falling back to default profiles: default
+2019-07-18 18:59:32.102  INFO 7492 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@12299890: startup date [Thu Jul 18 18:59:32 CST 2019]; root of context hierarchy
+2019-07-18 18:59:32.920  INFO 7492 --- [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2019-07-18 18:59:32.920  INFO 7492 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration$EmbeddedDataSourceFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2019-07-18 18:59:33.305  INFO 7492 --- [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:70c81ab4-487c-4d3e-8412-17bfcf68a22f;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2019-07-18 18:59:33.421  WARN 7492 --- [main] org.flywaydb.core.Flyway                 : Direct configuration of the Flyway object has been deprecated and will be removed in Flyway 6.0. Use Flyway.configure() instead.
+2019-07-18 18:59:33.421  WARN 7492 --- [main] org.flywaydb.core.Flyway                 : Direct configuration of the Flyway object has been deprecated and will be removed in Flyway 6.0. Use Flyway.configure() instead.
+2019-07-18 18:59:33.421  WARN 7492 --- [main] org.flywaydb.core.Flyway                 : Direct configuration retrieval from the Flyway object has been deprecated and will be removed in Flyway 6.0. Use Flyway.getConfiguration() instead.
+2019-07-18 18:59:33.421  WARN 7492 --- [main] org.flywaydb.core.Flyway                 : Direct configuration retrieval from the Flyway object has been deprecated and will be removed in Flyway 6.0. Use Flyway.getConfiguration() instead.
+2019-07-18 18:59:33.421  WARN 7492 --- [main] org.flywaydb.core.Flyway                 : Direct configuration of the Flyway object has been deprecated and will be removed in Flyway 6.0. Use Flyway.configure() instead.
+2019-07-18 18:59:33.453  INFO 7492 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2019-07-18 18:59:33.484  INFO 7492 --- [main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:mem:70c81ab4-487c-4d3e-8412-17bfcf68a22f (H2 1.4)
+2019-07-18 18:59:33.553  INFO 7492 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.013s)
+2019-07-18 18:59:33.569  INFO 7492 --- [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table: "PUBLIC"."flyway_schema_history"
+2019-07-18 18:59:33.584  INFO 7492 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2019-07-18 18:59:33.584  INFO 7492 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version 1 - Create Table parkingLot
+2019-07-18 18:59:33.606  INFO 7492 --- [main] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema "PUBLIC" (execution time 00:00.039s)
+2019-07-18 18:59:33.753  INFO 7492 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-07-18 18:59:33.753 DEBUG 7492 --- [main] o.hibernate.jpa.internal.util.LogHelper  : PersistenceUnitInfo [
+	name: default
+	persistence provider classname: null
+	classloader: sun.misc.Launcher$AppClassLoader@18b4aac2
+	excludeUnlistedClasses: true
+	JTA datasource: null
+	Non JTA datasource: org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory$EmbeddedDataSourceProxy@74971ed9
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/D:/task/Parking-Lot-Template-2019-7-18-5-13-30-271/out/test/classes/
+	Shared Cache Mode: UNSPECIFIED
+	Validation Mode: AUTO
+	Jar files URLs []
+	Managed classes names [
+		com.thoughtworks.parking_lot.model.ParkingLot]
+	Mapping files names []
+	Properties []
+2019-07-18 18:59:33.769 DEBUG 7492 --- [main] o.h.i.internal.IntegratorServiceImpl     : Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2019-07-18 18:59:33.769 DEBUG 7492 --- [main] o.h.i.internal.IntegratorServiceImpl     : Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2019-07-18 18:59:33.784 DEBUG 7492 --- [main] o.h.i.internal.IntegratorServiceImpl     : Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2019-07-18 18:59:33.784 DEBUG 7492 --- [main] o.h.i.internal.IntegratorServiceImpl     : Adding Integrator [org.hibernate.jpa.event.spi.JpaIntegrator].
+2019-07-18 18:59:33.822  INFO 7492 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2019-07-18 18:59:33.822  INFO 7492 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-07-18 18:59:33.837 DEBUG 7492 --- [main] o.hibernate.service.spi.ServiceBinding   : Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2019-07-18 18:59:33.853 DEBUG 7492 --- [main] o.h.c.internal.RegionFactoryInitiator    : Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2019-07-18 18:59:33.869  INFO 7492 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-07-18 18:59:33.922 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@3ac8cf9b
+2019-07-18 18:59:33.922 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@3ac8cf9b
+2019-07-18 18:59:33.922 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@3ac8cf9b
+2019-07-18 18:59:33.922 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@38018b62
+2019-07-18 18:59:33.922 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.TrueFalseType@3f4cd155
+2019-07-18 18:59:33.922 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.YesNoType@270b6b5e
+2019-07-18 18:59:33.922 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@138caeca
+2019-07-18 18:59:33.922 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@138caeca
+2019-07-18 18:59:33.922 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@138caeca
+2019-07-18 18:59:33.922 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.CharacterType@35178483
+2019-07-18 18:59:33.922 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.CharacterType@35178483
+2019-07-18 18:59:33.922 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@35178483
+2019-07-18 18:59:33.922 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@4d178d55
+2019-07-18 18:59:33.922 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@4d178d55
+2019-07-18 18:59:33.922 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.ShortType@4d178d55
+2019-07-18 18:59:33.922 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.IntegerType@2875b016
+2019-07-18 18:59:33.922 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.IntegerType@2875b016
+2019-07-18 18:59:33.922 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@2875b016
+2019-07-18 18:59:33.938 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@7f92b990
+2019-07-18 18:59:33.938 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@7f92b990
+2019-07-18 18:59:33.938 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.LongType@7f92b990
+2019-07-18 18:59:33.938 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@6be7bf6d
+2019-07-18 18:59:33.938 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@6be7bf6d
+2019-07-18 18:59:33.938 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.FloatType@6be7bf6d
+2019-07-18 18:59:33.938 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@12010fd1
+2019-07-18 18:59:33.938 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@12010fd1
+2019-07-18 18:59:33.938 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@12010fd1
+2019-07-18 18:59:33.938 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@3f1ddac2
+2019-07-18 18:59:33.938 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@3f1ddac2
+2019-07-18 18:59:33.938 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BigIntegerType@2b98b3bb
+2019-07-18 18:59:33.938 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@2b98b3bb
+2019-07-18 18:59:33.938 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.StringType@3730ab42
+2019-07-18 18:59:33.938 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.StringType@3730ab42
+2019-07-18 18:59:33.938 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.StringNVarcharType@63716833
+2019-07-18 18:59:33.938 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@87b5b49
+2019-07-18 18:59:33.938 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.UrlType@288cdaab
+2019-07-18 18:59:33.938 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.UrlType@288cdaab
+2019-07-18 18:59:33.938 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.DurationType@1cb7936c
+2019-07-18 18:59:33.938 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.DurationType@1cb7936c
+2019-07-18 18:59:33.938 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration Instant -> org.hibernate.type.InstantType@77a2aa4a
+2019-07-18 18:59:33.938 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.InstantType@77a2aa4a
+2019-07-18 18:59:33.954 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@100c567f
+2019-07-18 18:59:33.954 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@100c567f
+2019-07-18 18:59:33.954 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.LocalDateType@743c6ce4
+2019-07-18 18:59:33.954 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@743c6ce4
+2019-07-18 18:59:33.954 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@28fd3dc1
+2019-07-18 18:59:33.954 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@28fd3dc1
+2019-07-18 18:59:33.954 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@1128620c
+2019-07-18 18:59:33.954 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@1128620c
+2019-07-18 18:59:33.954 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@bdd2027
+2019-07-18 18:59:33.954 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@bdd2027
+2019-07-18 18:59:33.954 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@479f2dc2
+2019-07-18 18:59:33.954 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@479f2dc2
+2019-07-18 18:59:33.954 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.DateType@7063686f
+2019-07-18 18:59:33.954 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.DateType@7063686f
+2019-07-18 18:59:33.954 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.TimeType@1046498a
+2019-07-18 18:59:33.954 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.TimeType@1046498a
+2019-07-18 18:59:33.954 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.TimestampType@68f32020
+2019-07-18 18:59:33.954 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@68f32020
+2019-07-18 18:59:33.954 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.TimestampType@68f32020
+2019-07-18 18:59:33.954 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@22590e3e
+2019-07-18 18:59:33.954 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.CalendarType@2b329bbd
+2019-07-18 18:59:33.954 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@2b329bbd
+2019-07-18 18:59:33.954 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@2b329bbd
+2019-07-18 18:59:33.969 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@48cd9a2c
+2019-07-18 18:59:33.969 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.LocaleType@6d2dc9d2
+2019-07-18 18:59:33.969 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@6d2dc9d2
+2019-07-18 18:59:33.969 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.CurrencyType@45d64d27
+2019-07-18 18:59:33.969 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@45d64d27
+2019-07-18 18:59:33.969 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.TimeZoneType@4d6ee47
+2019-07-18 18:59:33.969 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@4d6ee47
+2019-07-18 18:59:33.969 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.ClassType@1fba386c
+2019-07-18 18:59:33.969 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.ClassType@1fba386c
+2019-07-18 18:59:33.969 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@1816e24a
+2019-07-18 18:59:33.969 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@1816e24a
+2019-07-18 18:59:33.969 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@39008c9f
+2019-07-18 18:59:33.969 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BinaryType@46d567cb
+2019-07-18 18:59:33.969 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BinaryType@46d567cb
+2019-07-18 18:59:33.969 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BinaryType@46d567cb
+2019-07-18 18:59:33.969 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@499683c4
+2019-07-18 18:59:33.969 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@499683c4
+2019-07-18 18:59:33.969 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@499683c4
+2019-07-18 18:59:33.969 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.RowVersionType@75308740
+2019-07-18 18:59:33.969 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.ImageType@41bf79da
+2019-07-18 18:59:33.969 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.CharArrayType@5ff90645
+2019-07-18 18:59:33.969 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.CharArrayType@5ff90645
+2019-07-18 18:59:33.969 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.CharArrayType@5ff90645
+2019-07-18 18:59:33.985 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@2c768ada
+2019-07-18 18:59:33.985 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@2c768ada
+2019-07-18 18:59:33.985 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@2c768ada
+2019-07-18 18:59:33.985 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.TextType@1640c151
+2019-07-18 18:59:33.985 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.NTextType@11ebb1b6
+2019-07-18 18:59:33.985 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BlobType@713064e8
+2019-07-18 18:59:33.985 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@713064e8
+2019-07-18 18:59:33.985 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@68217d41
+2019-07-18 18:59:33.985 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.ClobType@3effd4f3
+2019-07-18 18:59:33.985 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@3effd4f3
+2019-07-18 18:59:33.985 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.NClobType@7afbf561
+2019-07-18 18:59:33.985 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@7afbf561
+2019-07-18 18:59:33.985 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@6b0615ae
+2019-07-18 18:59:33.985 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@2cec704c
+2019-07-18 18:59:33.985 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.SerializableType@3bdb2c78
+2019-07-18 18:59:33.985 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.ObjectType@4da9f723
+2019-07-18 18:59:33.985 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@4da9f723
+2019-07-18 18:59:33.985 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@470a659f
+2019-07-18 18:59:33.985 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@451882b2
+2019-07-18 18:59:33.985 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@4a23350
+2019-07-18 18:59:33.985 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@7b78ed6a
+2019-07-18 18:59:33.985 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@6fca5907
+2019-07-18 18:59:33.985 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@6ec65b5e
+2019-07-18 18:59:34.001 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@7bebcd65
+2019-07-18 18:59:34.001 DEBUG 7492 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@47447ccf
+2019-07-18 18:59:34.007 DEBUG 7492 --- [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : Database ->
+       name : H2
+    version : 1.4.197 (2018-03-18)
+      major : 1
+      minor : 4
+2019-07-18 18:59:34.007 DEBUG 7492 --- [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : Driver ->
+       name : H2 JDBC Driver
+    version : 1.4.197 (2018-03-18)
+      major : 1
+      minor : 4
+2019-07-18 18:59:34.007 DEBUG 7492 --- [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : JDBC version : 4.0
+2019-07-18 18:59:34.023  INFO 7492 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-07-18 18:59:34.070 DEBUG 7492 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2019-07-18 18:59:34.070 DEBUG 7492 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2019-07-18 18:59:34.070 DEBUG 7492 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2019-07-18 18:59:34.070 DEBUG 7492 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2019-07-18 18:59:34.070 DEBUG 7492 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2019-07-18 18:59:34.070 DEBUG 7492 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2019-07-18 18:59:34.085 DEBUG 7492 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2019-07-18 18:59:34.085 DEBUG 7492 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2019-07-18 18:59:34.085 DEBUG 7492 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2019-07-18 18:59:34.085 DEBUG 7492 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2019-07-18 18:59:34.085 DEBUG 7492 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2019-07-18 18:59:34.085 DEBUG 7492 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2019-07-18 18:59:34.085 DEBUG 7492 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2019-07-18 18:59:34.085 DEBUG 7492 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2019-07-18 18:59:34.107 DEBUG 7492 --- [main] o.h.boot.model.relational.Namespace      : Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2019-07-18 18:59:34.123 DEBUG 7492 --- [main] org.hibernate.cfg.AnnotationBinder       : Binding entity from annotated class: com.thoughtworks.parking_lot.model.ParkingLot
+2019-07-18 18:59:34.139 DEBUG 7492 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2019-07-18 18:59:34.154 DEBUG 7492 --- [main] o.h.cfg.annotations.EntityBinder         : Import with entity name ParkingLot
+2019-07-18 18:59:34.154 DEBUG 7492 --- [main] o.h.cfg.annotations.EntityBinder         : Bind entity com.thoughtworks.parking_lot.model.ParkingLot on table parking_log
+2019-07-18 18:59:34.170 DEBUG 7492 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(parking_log), mappingColumn=name, insertable=true, updatable=true, unique=true}
+2019-07-18 18:59:34.186 DEBUG 7492 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property name with lazy=false
+2019-07-18 18:59:34.186 DEBUG 7492 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.thoughtworks.parking_lot.model.ParkingLot:name]
+2019-07-18 18:59:34.186 DEBUG 7492 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for name
+2019-07-18 18:59:34.186 DEBUG 7492 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property name
+2019-07-18 18:59:34.186 DEBUG 7492 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(parking_log), mappingColumn=address, insertable=true, updatable=true, unique=false}
+2019-07-18 18:59:34.186 DEBUG 7492 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property address with lazy=false
+2019-07-18 18:59:34.186 DEBUG 7492 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.thoughtworks.parking_lot.model.ParkingLot:address]
+2019-07-18 18:59:34.186 DEBUG 7492 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for address
+2019-07-18 18:59:34.186 DEBUG 7492 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property address
+2019-07-18 18:59:34.186 DEBUG 7492 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(parking_log), mappingColumn=capacity, insertable=true, updatable=true, unique=false}
+2019-07-18 18:59:34.186 DEBUG 7492 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property capacity with lazy=false
+2019-07-18 18:59:34.186 DEBUG 7492 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.thoughtworks.parking_lot.model.ParkingLot:capacity]
+2019-07-18 18:59:34.186 DEBUG 7492 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for capacity
+2019-07-18 18:59:34.186 DEBUG 7492 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property capacity
+2019-07-18 18:59:34.186 DEBUG 7492 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for name
+2019-07-18 18:59:34.186 DEBUG 7492 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for address
+2019-07-18 18:59:34.186 DEBUG 7492 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for capacity
+2019-07-18 18:59:34.186 DEBUG 7492 --- [main] org.hibernate.mapping.PrimaryKey         : Forcing column [name] to be non-null as it is part of the primary key for table [parking_log]
+2019-07-18 18:59:34.208 DEBUG 7492 --- [main] o.hibernate.internal.SessionFactoryImpl  : Building session factory
+2019-07-18 18:59:34.208 DEBUG 7492 --- [main] org.hibernate.cfg.Settings               : SessionFactory name : null
+2019-07-18 18:59:34.208 DEBUG 7492 --- [main] org.hibernate.cfg.Settings               : Automatic flush during beforeCompletion(): enabled
+2019-07-18 18:59:34.223 DEBUG 7492 --- [main] org.hibernate.cfg.Settings               : Automatic session close at end of transaction: disabled
+2019-07-18 18:59:34.223 DEBUG 7492 --- [main] org.hibernate.cfg.Settings               : Statistics: disabled
+2019-07-18 18:59:34.223 DEBUG 7492 --- [main] org.hibernate.cfg.Settings               : Deleted entity synthetic identifier rollback: disabled
+2019-07-18 18:59:34.223 DEBUG 7492 --- [main] org.hibernate.cfg.Settings               : Default entity-mode: pojo
+2019-07-18 18:59:34.223 DEBUG 7492 --- [main] org.hibernate.cfg.Settings               : Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2019-07-18 18:59:34.223 DEBUG 7492 --- [main] org.hibernate.cfg.Settings               : Allow initialization of lazy state outside session : disabled
+2019-07-18 18:59:34.223 DEBUG 7492 --- [main] org.hibernate.cfg.Settings               : Using BatchFetchStyle : LEGACY
+2019-07-18 18:59:34.223 DEBUG 7492 --- [main] org.hibernate.cfg.Settings               : Default batch fetch size: -1
+2019-07-18 18:59:34.223 DEBUG 7492 --- [main] org.hibernate.cfg.Settings               : Maximum outer join fetch depth: null
+2019-07-18 18:59:34.223 DEBUG 7492 --- [main] org.hibernate.cfg.Settings               : Default null ordering: NONE
+2019-07-18 18:59:34.223 DEBUG 7492 --- [main] org.hibernate.cfg.Settings               : Order SQL updates by primary key: disabled
+2019-07-18 18:59:34.223 DEBUG 7492 --- [main] org.hibernate.cfg.Settings               : Order SQL inserts for batching: disabled
+2019-07-18 18:59:34.223 DEBUG 7492 --- [main] org.hibernate.cfg.Settings               : multi-tenancy strategy : NONE
+2019-07-18 18:59:34.223 DEBUG 7492 --- [main] org.hibernate.cfg.Settings               : JTA Track by Thread: enabled
+2019-07-18 18:59:34.223 DEBUG 7492 --- [main] org.hibernate.cfg.Settings               : Query language substitutions: {}
+2019-07-18 18:59:34.223 DEBUG 7492 --- [main] org.hibernate.cfg.Settings               : JPA query language strict compliance: disabled
+2019-07-18 18:59:34.223 DEBUG 7492 --- [main] org.hibernate.cfg.Settings               : Named query checking : enabled
+2019-07-18 18:59:34.223 DEBUG 7492 --- [main] org.hibernate.cfg.Settings               : Second-level cache: disabled
+2019-07-18 18:59:34.223 DEBUG 7492 --- [main] org.hibernate.cfg.Settings               : Second-level query cache: disabled
+2019-07-18 18:59:34.223 DEBUG 7492 --- [main] org.hibernate.cfg.Settings               : Second-level query cache factory: null
+2019-07-18 18:59:34.223 DEBUG 7492 --- [main] org.hibernate.cfg.Settings               : Second-level cache region prefix: null
+2019-07-18 18:59:34.223 DEBUG 7492 --- [main] org.hibernate.cfg.Settings               : Optimize second-level cache for minimal puts: disabled
+2019-07-18 18:59:34.223 DEBUG 7492 --- [main] org.hibernate.cfg.Settings               : Structured second-level cache entries: disabled
+2019-07-18 18:59:34.223 DEBUG 7492 --- [main] org.hibernate.cfg.Settings               : Second-level cache direct-reference entries: disabled
+2019-07-18 18:59:34.223 DEBUG 7492 --- [main] org.hibernate.cfg.Settings               : Automatic eviction of collection cache: disabled
+2019-07-18 18:59:34.223 DEBUG 7492 --- [main] org.hibernate.cfg.Settings               : JDBC batch size: 15
+2019-07-18 18:59:34.223 DEBUG 7492 --- [main] org.hibernate.cfg.Settings               : JDBC batch updates for versioned data: enabled
+2019-07-18 18:59:34.223 DEBUG 7492 --- [main] org.hibernate.cfg.Settings               : Scrollable result sets: enabled
+2019-07-18 18:59:34.223 DEBUG 7492 --- [main] org.hibernate.cfg.Settings               : Wrap result sets: disabled
+2019-07-18 18:59:34.223 DEBUG 7492 --- [main] org.hibernate.cfg.Settings               : JDBC3 getGeneratedKeys(): enabled
+2019-07-18 18:59:34.239 DEBUG 7492 --- [main] org.hibernate.cfg.Settings               : JDBC result set fetch size: null
+2019-07-18 18:59:34.239 DEBUG 7492 --- [main] org.hibernate.cfg.Settings               : Connection release mode: ON_CLOSE
+2019-07-18 18:59:34.239 DEBUG 7492 --- [main] org.hibernate.cfg.Settings               : Generate SQL with comments: disabled
+2019-07-18 18:59:34.270 DEBUG 7492 --- [main] o.hibernate.internal.SessionFactoryImpl  : Session factory constructed with filter configurations : {}
+2019-07-18 18:59:34.270 DEBUG 7492 --- [main] o.hibernate.internal.SessionFactoryImpl  : Instantiating session factory with properties: {sun.desktop=windows, awt.toolkit=sun.awt.windows.WToolkit, hibernate.id.new_generator_mappings=true, file.encoding.pkg=sun.io, java.specification.version=1.8, sun.cpu.isalist=amd64, hibernate.connection.handling_mode=DELAYED_ACQUISITION_AND_HOLD, sun.jnu.encoding=Cp1252, hibernate.dialect=org.hibernate.dialect.H2Dialect, hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy, java.class.path=C:\Program Files\JetBrains\IntelliJ IDEA 2018.2\lib\idea_rt.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2018.2\plugins\junit\lib\junit-rt.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2018.2\plugins\junit\lib\junit5-rt.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\rt.jar;D:\task\Parking-Lot-Template-2019-7-18-5-13-30-271\out\test\classes;D:\task\Parking-Lot-Template-2019-7-18-5-13-30-271\out\production\classes;D:\task\Parking-Lot-Template-2019-7-18-5-13-30-271\out\production\resources;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-actuator\2.0.3.RELEASE\d370eeff676d24523ee530f6abc569474d2f9bf9\spring-boot-starter-actuator-2.0.3.RELEASE.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-web\2.0.3.RELEASE\41fd4180bea3813de8f3c602b5a126218360315b\spring-boot-starter-web-2.0.3.RELEASE.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-data-jpa\2.0.3.RELEASE\56c909f49b5385793942158e143187ecc8c7b54a\spring-boot-starter-data-jpa-2.0.3.RELEASE.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\com.h2database\h2\1.4.197\bb391050048ca8ae3e32451b5a3714ecd3596a46\h2-1.4.197.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.flywaydb\flyway-core\5.2.4\50a92d39554615bd4ff56d148a359b20dc17f655\flyway-core-5.2.4.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-test\2.0.3.RELEASE\1c624b1cc217bac010abce7a28df8169af4a7fa0\spring-boot-starter-test-2.0.3.RELEASE.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.junit.jupiter\junit-jupiter-params\5.0.0\a8d7edfbfbc0a7deaf59167db5c0e750222e8fb2\junit-jupiter-params-5.0.0.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.junit.jupiter\junit-jupiter-api\5.0.0\f7fe1b74bef74d640493781abecafba191472ad\junit-jupiter-api-5.0.0.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-json\2.0.3.RELEASE\2e389a8727588c549c28bb277f0f573f65554850\spring-boot-starter-json-2.0.3.RELEASE.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-aop\2.0.3.RELEASE\a78c7bc25fd51b217f078421dc40d13ddc3b9f8f\spring-boot-starter-aop-2.0.3.RELEASE.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.junit.jupiter\junit-jupiter-engine\5.0.0\811b65ec5a499732868f76c1d2a6f5786774ff82\junit-jupiter-engine-5.0.0.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-jdbc\2.0.3.RELEASE\4f5f3411692a0f5efb60f7f583bdfcf49199a3d4\spring-boot-starter-jdbc-2.0.3.RELEASE.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter\2.0.3.RELEASE\ffaa050dbd36b0441645598f1a7ddaf67fd5e678\spring-boot-starter-2.0.3.RELEASE.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-actuator-autoconfigure\2.0.3.RELEASE\f3e3392c3e8e2714fc05bbf0f3ee496ad19eedc7\spring-boot-actuator-autoconfigure-2.0.3.RELEASE.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\io.micrometer\micrometer-core\1.0.5\c5eaa23f5bb1f0f4b7eb44824093874d0d9165f5\micrometer-core-1.0.5.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-tomcat\2.0.3.RELEASE\25a51a75bfb997b7b95d6760178ee3303863ec4b\spring-boot-starter-tomcat-2.0.3.RELEASE.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.hibernate.validator\hibernate-validator\6.0.10.Final\4236051a8d209c00f85e70918d5e26d9f3e5201e\hibernate-validator-6.0.10.Final.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.springframework\spring-webmvc\5.0.7.RELEASE\751c871527ec7ff335ffc76f2e737e297c0a8d30\spring-webmvc-5.0.7.RELEASE.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.springframework\spring-web\5.0.7.RELEASE\2e04c6c2922fbfa06b5948be14a5782db168b6ec\spring-web-5.0.7.RELEASE.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.hibernate\hibernate-core\5.2.17.Final\f2dc36470e7a2ffcf6106bb1625ecf5b54bb5f65\hibernate-core-5.2.17.Final.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\javax.transaction\javax.transaction-api\1.2\d81aff979d603edd90dcd8db2abc1f4ce6479e3e\javax.transaction-api-1.2.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.springframework.data\spring-data-jpa\2.0.8.RELEASE\8b874afd15da2b4d2d9b8431ad2be0c6829e41fe\spring-data-jpa-2.0.8.RELEASE.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.springframework\spring-aspects\5.0.7.RELEASE\afd3f7ecb9d7c2cb3160563f9f64b72223bb0265\spring-aspects-5.0.7.RELEASE.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-test-autoconfigure\2.0.3.RELEASE\54e7d2167f2b926bf16a0ef8b91b6bfbd43826e7\spring-boot-test-autoconfigure-2.0.3.RELEASE.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-test\2.0.3.RELEASE\5c9b4bb6cfce9ef6e53a0ff5fc4a7ff2867871d8\spring-boot-test-2.0.3.RELEASE.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\com.jayway.jsonpath\json-path\2.4.0\765a4401ceb2dc8d40553c2075eb80a8fa35c2ae\json-path-2.4.0.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\junit\junit\4.12\2973d150c0dc1fefe998f834810d68f278ea58ec\junit-4.12.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.assertj\assertj-core\3.9.1\c5ce126b15f28d56cd8f960c1a6a058b9c9aea87\assertj-core-3.9.1.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.mockito\mockito-core\2.15.0\b84bfbbc29cd22c9529409627af6ea2897f4fa85\mockito-core-2.15.0.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-library\1.3\4785a3c21320980282f9f33d0d1264a69040538f\hamcrest-library-1.3.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-core\1.3\42a25dc3219429f0e5d060061f71acb49bf010a0\hamcrest-core-1.3.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.skyscreamer\jsonassert\1.5.0\6c9d5fe2f59da598d9aefc1cfc6528ff3cf32df3\jsonassert-1.5.0.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.springframework\spring-test\5.0.7.RELEASE\bcb7505a316ea34b7e9a7ae5d4921be5b475c02d\spring-test-5.0.7.RELEASE.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-autoconfigure\2.0.3.RELEASE\11bc4cc96b08fabad2b3186755818fa0b32d83f\spring-boot-autoconfigure-2.0.3.RELEASE.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-actuator\2.0.3.RELEASE\5aa239d8ad6d8130b055caebf44467b9c55d422b\spring-boot-actuator-2.0.3.RELEASE.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot\2.0.3.RELEASE\b874870d915adbc3dd932e19077d3d45c8e54aa0\spring-boot-2.0.3.RELEASE.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.springframework\spring-context\5.0.7.RELEASE\243a23f8968de8754d8199d669780d683ab177bd\spring-context-5.0.7.RELEASE.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.springframework\spring-aop\5.0.7.RELEASE\fdd0b6aa3c9c7a188c3bfbf6dfd8d40e843be9ef\spring-aop-5.0.7.RELEASE.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.springframework\spring-orm\5.0.7.RELEASE\4deed5f4a38d62f9dba7db8e010da8b49e322757\spring-orm-5.0.7.RELEASE.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.springframework\spring-jdbc\5.0.7.RELEASE\9c78c6b9a6c603f6589b480e165939cde7bab7f9\spring-jdbc-5.0.7.RELEASE.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.springframework.data\spring-data-commons\2.0.8.RELEASE\5c19af63b5acb0eab39066684e813d5ecd9d03b7\spring-data-commons-2.0.8.RELEASE.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.springframework\spring-tx\5.0.7.RELEASE\4ca59b21c61162adb146ad1b40c30b60d8dc42b8\spring-tx-5.0.7.RELEASE.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.springframework\spring-beans\5.0.7.RELEASE\c1196cb3e56da83e3c3a02ef323699f4b05feedc\spring-beans-5.0.7.RELEASE.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.springframework\spring-expression\5.0.7.RELEASE\ca01fb473f53dd0ee3c85663b26d5dc325602057\spring-expression-5.0.7.RELEASE.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.springframework\spring-core\5.0.7.RELEASE\54b731178d81e66eca9623df772ff32718208137\spring-core-5.0.7.RELEASE.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.xmlunit\xmlunit-core\2.5.1\4ffdb346572a7356f7521cd3119ce5287d2e339d\xmlunit-core-2.5.1.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.junit.platform\junit-platform-commons\1.0.0\d2e03d9b21020746d48fe45834ff7d71fbcbd7b2\junit-platform-commons-1.0.0.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.apiguardian\apiguardian-api\1.0.0\3ef5276905e36f4d8055fe3cb0bdcc7503ffc85d\apiguardian-api-1.0.0.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.opentest4j\opentest4j\1.0.0\6f09c598e9ff64bf0ce2fa7e7de49a99ba83c0b4\opentest4j-1.0.0.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.junit.platform\junit-platform-engine\1.0.0\fdc6f63a689b894529ea5e9e218b65422748fd\junit-platform-engine-1.0.0.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-logging\2.0.3.RELEASE\7caad34f01d2688919e15e09a90467963e3d5190\spring-boot-starter-logging-2.0.3.RELEASE.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\javax.annotation\javax.annotation-api\1.3.2\934c04d3cfef185a8008e7bf34331b79730a9d43\javax.annotation-api-1.3.2.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.yaml\snakeyaml\1.19\2d998d3d674b172a588e54ab619854d073f555b5\snakeyaml-1.19.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\2.9.6\ea54f6193d224e5e5732bbd4262327eb465397c2\jackson-datatype-jsr310-2.9.6.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\2.9.6\456895fc91bf7180b216fead220373e6278230c9\jackson-datatype-jdk8-2.9.6.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.module\jackson-module-parameter-names\2.9.6\129acd77a4b6ee30d62d3a0899b1344c8ec2bff8\jackson-module-parameter-names-2.9.6.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.9.6\cfa4f316351a91bfd95cb0644c6a2c95f52db1fc\jackson-databind-2.9.6.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.hdrhistogram\HdrHistogram\2.1.10\9e1ac84eed220281841b75e72fb9de5a297fbf04\HdrHistogram-2.1.10.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.latencyutils\LatencyUtils\2.0.3\769c0b82cb2421c8256300e907298a9410a2a3d3\LatencyUtils-2.0.3.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.apache.tomcat.embed\tomcat-embed-websocket\8.5.31\6564e716b89de5eaa0dd234ae7989576503ddf3\tomcat-embed-websocket-8.5.31.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.apache.tomcat.embed\tomcat-embed-core\8.5.31\f5adf7ed8c34aa005b22b6a2dc7b6796e10e9c79\tomcat-embed-core-8.5.31.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.apache.tomcat.embed\tomcat-embed-el\8.5.31\3a536e1ac71b82627c3a7408eb38fa0704cb9034\tomcat-embed-el-8.5.31.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\javax.validation\validation-api\2.0.1.Final\cb855558e6271b1b32e716d24cb85c7f583ce09e\validation-api-2.0.1.Final.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.hibernate.common\hibernate-commons-annotations\5.0.1.Final\71e1cff3fcb20d3b3af4f3363c3ddb24d33c6879\hibernate-commons-annotations-5.0.1.Final.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.jboss.logging\jboss-logging\3.3.2.Final\3789d00e859632e6c6206adc0c71625559e6e3b0\jboss-logging-3.3.2.Final.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\com.fasterxml\classmate\1.3.4\3d5f48f10bbe4eb7bd862f10c0583be2e0053c6\classmate-1.3.4.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.aspectj\aspectjweaver\1.8.13\ad94df2a28d658a40dc27bbaff6a1ce5fbf04e9b\aspectjweaver-1.8.13.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\com.zaxxer\HikariCP\2.7.9\a83113d2c091d0d0f853dad3217bd7df3beb6ae3\HikariCP-2.7.9.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.hibernate.javax.persistence\hibernate-jpa-2.1-api\1.0.2.Final\52afb5762c704a6b586e27742470c08f91877fc1\hibernate-jpa-2.1-api-1.0.2.Final.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.javassist\javassist\3.22.0-GA\3e83394258ae2089be7219b971ec21a8288528ad\javassist-3.22.0-GA.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\antlr\antlr\2.7.7\83cd2cd674a217ade95a4bb83a8a14f351f48bd0\antlr-2.7.7.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.jboss\jandex\2.0.3.Final\bfc4d6257dbff7a33a357f0de116be6ff951d849\jandex-2.0.3.Final.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\dom4j\dom4j\1.6.1\5d3ccc056b6f056dbf0dddfdf43894b9065a8f94\dom4j-1.6.1.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\ch.qos.logback\logback-classic\1.2.3\7c4f3c474fb2c041d8028740440937705ebb473a\logback-classic-1.2.3.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-to-slf4j\2.10.0\f7e631ccf49cfc0aefa4a2a728da7d374c05bd3c\log4j-to-slf4j-2.10.0.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.slf4j\jul-to-slf4j\1.7.25\af5364cd6679bfffb114f0dec8a157aaa283b76\jul-to-slf4j-1.7.25.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\1.7.25\da76ca59f6a57ee3102f8f9bd9cee742973efa8a\slf4j-api-1.7.25.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\net.minidev\json-smart\2.3\7396407491352ce4fa30de92efb158adb76b5b\json-smart-2.3.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy\1.7.11\f02857a4e2c66ccbe7aaad6100a0a6c461bce9b3\byte-buddy-1.7.11.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.7.11\b425a8933ca07edd03c6dbc8bc3b595fba9780de\byte-buddy-agent-1.7.11.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.objenesis\objenesis\2.6\639033469776fd37c08358c6b92a4761feb2af4b\objenesis-2.6.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\com.vaadin.external.google\android-json\0.0.20131108.vaadin1\fa26d351fe62a6a17f5cda1287c1c6110dec413f\android-json-0.0.20131108.vaadin1.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.springframework\spring-jcl\5.0.7.RELEASE\699016ddf454c2c167d9f84ae5777eccadf54728\spring-jcl-5.0.7.RELEASE.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.9.0\7c10d545325e3a6e72e06381afe469fd40eb701\jackson-annotations-2.9.0.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.9.6\4e393793c37c77e042ccc7be5a914ae39251b365\jackson-core-2.9.6.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\net.minidev\accessors-smart\1.2\c592b500269bfde36096641b01238a8350f8aa31\accessors-smart-1.2.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\ch.qos.logback\logback-core\1.2.3\864344400c3d4d92dfeb0a305dc87d953677c03c\logback-core-1.2.3.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-api\2.10.0\fec5797a55b786184a537abd39c3fa1449d752d6\log4j-api-2.10.0.jar;C:\Users\HUANGVI7\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm\5.0.4\da08b8cce7bbf903602a25a3a163ae252435795\asm-5.0.4.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2018.2\lib\idea_rt.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, idea.test.cyclic.buffer.size=1048576, user.variant=, java.vendor.url=http://java.oracle.com/, user.timezone=Asia/Shanghai, os.name=Windows 10, java.vm.specification.version=1.8, javax.persistence.validation.mode=AUTO, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_121\jre\bin, sun.java.command=com.intellij.rt.execution.junit.JUnitStarter -ideVersion5 -junit4 com.thoughtworks.parking_lot.ReopositoryTest.ParkingLotRepositoryTets,should_find_all_parking_lot, hibernate.transaction.jta.platform=org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform@d277579, javax.persistence.sharedCache.mode=UNSPECIFIED, sun.cpu.endian=little, user.home=C:\Users\HUANGVI7, user.language=en, java.specification.vendor=Oracle Corporation, java.home=C:\Program Files\Java\jdk1.8.0_121\jre, file.separator=\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, hibernate.transaction.coordinator_class=class org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.awt.headless=true, sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_121\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_121\jre\classes, hibernate.hbm2ddl.auto=validate, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=1.8.0_121-b13, user.name=HUANGVI7, path.separator=;, os.version=10.0, java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_121\jre\lib\endorsed, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.ejb.persistenceUnitName=default, file.encoding=UTF-8, spring.beaninfo.ignore=true, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.show_sql=true, LOG_FILE=logs/application.log, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, java.io.tmpdir=C:\Users\HUANGVI7\AppData\Local\Temp\, java.version=1.8.0_121, hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy, user.dir=D:\task\Parking-Lot-Template-2019-7-18-5-13-30-271, os.arch=amd64, PID=7492, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.os.patch.level=, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@5db6b845, java.library.path=C:\Program Files\Java\jdk1.8.0_121\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\Program Files\Java\jdk1.8.0_121\bin;D:\program\apache-maven-3.5.3\bin;D:\program\apache-ant-1.10.3\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\GitExtensions\;D:\software\gradle-5.5\bin;C:\Program Files\nodejs\;C:\Windows\System32;C:\Users\HUANGVI7\AppData\Local\Microsoft\WindowsApps;C:\Users\HUANGVI7\AppData\Roaming\npm;., java.vendor=Oracle Corporation, java.vm.info=mixed mode, java.vm.version=25.121-b13, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.datasource=org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory$EmbeddedDataSourceProxy@74971ed9, sun.io.unicode.encoding=UnicodeLittle, java.ext.dirs=C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext;C:\windows\Sun\Java\lib\ext, java.class.version=52.0}
+2019-07-18 18:59:34.286 DEBUG 7492 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-07-18 18:59:34.286 DEBUG 7492 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-07-18 18:59:34.286 DEBUG 7492 --- [main] o.h.v.internal.xml.ValidationXmlParser   : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-07-18 18:59:34.286 DEBUG 7492 --- [main] o.h.v.internal.xml.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via TCCL
+2019-07-18 18:59:34.286 DEBUG 7492 --- [main] o.h.v.internal.xml.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-07-18 18:59:34.286 DEBUG 7492 --- [main] o.h.v.internal.xml.ValidationXmlParser   : No META-INF/validation.xml found. Using annotation based configuration only.
+2019-07-18 18:59:34.303 DEBUG 7492 --- [main] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2019-07-18 18:59:34.303 DEBUG 7492 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2019-07-18 18:59:34.303 DEBUG 7492 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2019-07-18 18:59:34.304 DEBUG 7492 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2019-07-18 18:59:34.304 DEBUG 7492 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2019-07-18 18:59:34.304 DEBUG 7492 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2019-07-18 18:59:34.305 DEBUG 7492 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [com.thoughtworks.parking_lot.model.ParkingLot] is safe
+2019-07-18 18:59:34.305 DEBUG 7492 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.thoughtworks.parking_lot.model.ParkingLot
+2019-07-18 18:59:34.339 DEBUG 7492 --- [main] org.hibernate.secure.spi.JaccIntegrator  : Skipping JACC integration as it was not enabled
+2019-07-18 18:59:34.339 DEBUG 7492 --- [main] org.hibernate.engine.spi.CascadeStyles   : External cascade style registration [persist : STYLE_PERSIST_SKIPLAZY] overrode base registration [STYLE_PERSIST]
+2019-07-18 18:59:34.339 DEBUG 7492 --- [main] o.hibernate.internal.SessionFactoryImpl  : Instantiated session factory
+2019-07-18 18:59:34.370 DEBUG 7492 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [com.thoughtworks.parking_lot.model.ParkingLot] is safe
+2019-07-18 18:59:34.370 DEBUG 7492 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.thoughtworks.parking_lot.model.ParkingLot
+2019-07-18 18:59:34.386 DEBUG 7492 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [com.thoughtworks.parking_lot.model.ParkingLot] is safe
+2019-07-18 18:59:34.386 DEBUG 7492 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.thoughtworks.parking_lot.model.ParkingLot
+2019-07-18 18:59:34.408 DEBUG 7492 --- [main] o.h.p.entity.AbstractEntityPersister     : Static SQL for entity: com.thoughtworks.parking_lot.model.ParkingLot
+2019-07-18 18:59:34.408 DEBUG 7492 --- [main] o.h.p.entity.AbstractEntityPersister     :  Version select: select name from parking_log where name =?
+2019-07-18 18:59:34.408 DEBUG 7492 --- [main] o.h.p.entity.AbstractEntityPersister     :  Snapshot select: select parkinglot_.name, parkinglot_.address as address2_0_, parkinglot_.capacity as capacity3_0_ from parking_log parkinglot_ where parkinglot_.name=?
+2019-07-18 18:59:34.408 DEBUG 7492 --- [main] o.h.p.entity.AbstractEntityPersister     :  Insert 0: insert into parking_log (address, capacity, name) values (?, ?, ?)
+2019-07-18 18:59:34.408 DEBUG 7492 --- [main] o.h.p.entity.AbstractEntityPersister     :  Update 0: update parking_log set address=?, capacity=? where name=?
+2019-07-18 18:59:34.408 DEBUG 7492 --- [main] o.h.p.entity.AbstractEntityPersister     :  Delete 0: delete from parking_log where name=?
+2019-07-18 18:59:34.439 DEBUG 7492 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1a500561]
+2019-07-18 18:59:34.439 DEBUG 7492 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : address
+2019-07-18 18:59:34.439 DEBUG 7492 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : capacity
+2019-07-18 18:59:34.439 DEBUG 7492 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2019-07-18 18:59:34.455 DEBUG 7492 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2019-07-18 18:59:34.455 DEBUG 7492 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.thoughtworks.parking_lot.model.ParkingLot)
+    - Returns
+       - EntityReturnImpl(entity=com.thoughtworks.parking_lot.model.ParkingLot, querySpaceUid=<gen:0>, path=com.thoughtworks.parking_lot.model.ParkingLot)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.thoughtworks.parking_lot.model.ParkingLot)
+          - SQL table alias mapping - parkinglot0_
+          - alias suffix - 0_
+          - suffixed key columns - {name1_0_0_}
+
+2019-07-18 18:59:34.455 DEBUG 7492 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.thoughtworks.parking_lot.model.ParkingLot [NONE]: select parkinglot0_.name as name1_0_0_, parkinglot0_.address as address2_0_0_, parkinglot0_.capacity as capacity3_0_0_ from parking_log parkinglot0_ where parkinglot0_.name=?
+2019-07-18 18:59:34.455 DEBUG 7492 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@340d6d89]
+2019-07-18 18:59:34.455 DEBUG 7492 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : address
+2019-07-18 18:59:34.455 DEBUG 7492 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : capacity
+2019-07-18 18:59:34.455 DEBUG 7492 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2019-07-18 18:59:34.455 DEBUG 7492 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2019-07-18 18:59:34.455 DEBUG 7492 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.thoughtworks.parking_lot.model.ParkingLot)
+    - Returns
+       - EntityReturnImpl(entity=com.thoughtworks.parking_lot.model.ParkingLot, querySpaceUid=<gen:0>, path=com.thoughtworks.parking_lot.model.ParkingLot)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.thoughtworks.parking_lot.model.ParkingLot)
+          - SQL table alias mapping - parkinglot0_
+          - alias suffix - 0_
+          - suffixed key columns - {name1_0_0_}
+
+2019-07-18 18:59:34.455 DEBUG 7492 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.thoughtworks.parking_lot.model.ParkingLot [READ]: select parkinglot0_.name as name1_0_0_, parkinglot0_.address as address2_0_0_, parkinglot0_.capacity as capacity3_0_0_ from parking_log parkinglot0_ where parkinglot0_.name=?
+2019-07-18 18:59:34.455 DEBUG 7492 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@443faa85]
+2019-07-18 18:59:34.455 DEBUG 7492 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : address
+2019-07-18 18:59:34.455 DEBUG 7492 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : capacity
+2019-07-18 18:59:34.455 DEBUG 7492 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2019-07-18 18:59:34.455 DEBUG 7492 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2019-07-18 18:59:34.455 DEBUG 7492 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.thoughtworks.parking_lot.model.ParkingLot)
+    - Returns
+       - EntityReturnImpl(entity=com.thoughtworks.parking_lot.model.ParkingLot, querySpaceUid=<gen:0>, path=com.thoughtworks.parking_lot.model.ParkingLot)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.thoughtworks.parking_lot.model.ParkingLot)
+          - SQL table alias mapping - parkinglot0_
+          - alias suffix - 0_
+          - suffixed key columns - {name1_0_0_}
+
+2019-07-18 18:59:34.455 DEBUG 7492 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.thoughtworks.parking_lot.model.ParkingLot [UPGRADE]: select parkinglot0_.name as name1_0_0_, parkinglot0_.address as address2_0_0_, parkinglot0_.capacity as capacity3_0_0_ from parking_log parkinglot0_ where parkinglot0_.name=? for update
+2019-07-18 18:59:34.471 DEBUG 7492 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@41da3aee]
+2019-07-18 18:59:34.471 DEBUG 7492 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : address
+2019-07-18 18:59:34.471 DEBUG 7492 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : capacity
+2019-07-18 18:59:34.471 DEBUG 7492 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2019-07-18 18:59:34.471 DEBUG 7492 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2019-07-18 18:59:34.471 DEBUG 7492 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.thoughtworks.parking_lot.model.ParkingLot)
+    - Returns
+       - EntityReturnImpl(entity=com.thoughtworks.parking_lot.model.ParkingLot, querySpaceUid=<gen:0>, path=com.thoughtworks.parking_lot.model.ParkingLot)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.thoughtworks.parking_lot.model.ParkingLot)
+          - SQL table alias mapping - parkinglot0_
+          - alias suffix - 0_
+          - suffixed key columns - {name1_0_0_}
+
+2019-07-18 18:59:34.471 DEBUG 7492 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.thoughtworks.parking_lot.model.ParkingLot [UPGRADE_NOWAIT]: select parkinglot0_.name as name1_0_0_, parkinglot0_.address as address2_0_0_, parkinglot0_.capacity as capacity3_0_0_ from parking_log parkinglot0_ where parkinglot0_.name=? for update
+2019-07-18 18:59:34.471 DEBUG 7492 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@64920dc2]
+2019-07-18 18:59:34.471 DEBUG 7492 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : address
+2019-07-18 18:59:34.471 DEBUG 7492 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : capacity
+2019-07-18 18:59:34.471 DEBUG 7492 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2019-07-18 18:59:34.471 DEBUG 7492 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2019-07-18 18:59:34.471 DEBUG 7492 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.thoughtworks.parking_lot.model.ParkingLot)
+    - Returns
+       - EntityReturnImpl(entity=com.thoughtworks.parking_lot.model.ParkingLot, querySpaceUid=<gen:0>, path=com.thoughtworks.parking_lot.model.ParkingLot)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.thoughtworks.parking_lot.model.ParkingLot)
+          - SQL table alias mapping - parkinglot0_
+          - alias suffix - 0_
+          - suffixed key columns - {name1_0_0_}
+
+2019-07-18 18:59:34.471 DEBUG 7492 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.thoughtworks.parking_lot.model.ParkingLot [UPGRADE_SKIPLOCKED]: select parkinglot0_.name as name1_0_0_, parkinglot0_.address as address2_0_0_, parkinglot0_.capacity as capacity3_0_0_ from parking_log parkinglot0_ where parkinglot0_.name=? for update
+2019-07-18 18:59:34.471 DEBUG 7492 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@493ac8d3]
+2019-07-18 18:59:34.471 DEBUG 7492 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : address
+2019-07-18 18:59:34.471 DEBUG 7492 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : capacity
+2019-07-18 18:59:34.471 DEBUG 7492 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2019-07-18 18:59:34.471 DEBUG 7492 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2019-07-18 18:59:34.486 DEBUG 7492 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.thoughtworks.parking_lot.model.ParkingLot)
+    - Returns
+       - EntityReturnImpl(entity=com.thoughtworks.parking_lot.model.ParkingLot, querySpaceUid=<gen:0>, path=com.thoughtworks.parking_lot.model.ParkingLot)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.thoughtworks.parking_lot.model.ParkingLot)
+          - SQL table alias mapping - parkinglot0_
+          - alias suffix - 0_
+          - suffixed key columns - {name1_0_0_}
+
+2019-07-18 18:59:34.486 DEBUG 7492 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.thoughtworks.parking_lot.model.ParkingLot [FORCE]: select parkinglot0_.name as name1_0_0_, parkinglot0_.address as address2_0_0_, parkinglot0_.capacity as capacity3_0_0_ from parking_log parkinglot0_ where parkinglot0_.name=? for update
+2019-07-18 18:59:34.486 DEBUG 7492 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@67531e3a]
+2019-07-18 18:59:34.486 DEBUG 7492 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : address
+2019-07-18 18:59:34.486 DEBUG 7492 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : capacity
+2019-07-18 18:59:34.486 DEBUG 7492 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2019-07-18 18:59:34.486 DEBUG 7492 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2019-07-18 18:59:34.486 DEBUG 7492 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.thoughtworks.parking_lot.model.ParkingLot)
+    - Returns
+       - EntityReturnImpl(entity=com.thoughtworks.parking_lot.model.ParkingLot, querySpaceUid=<gen:0>, path=com.thoughtworks.parking_lot.model.ParkingLot)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.thoughtworks.parking_lot.model.ParkingLot)
+          - SQL table alias mapping - parkinglot0_
+          - alias suffix - 0_
+          - suffixed key columns - {name1_0_0_}
+
+2019-07-18 18:59:34.486 DEBUG 7492 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.thoughtworks.parking_lot.model.ParkingLot [PESSIMISTIC_READ]: select parkinglot0_.name as name1_0_0_, parkinglot0_.address as address2_0_0_, parkinglot0_.capacity as capacity3_0_0_ from parking_log parkinglot0_ where parkinglot0_.name=? for update
+2019-07-18 18:59:34.486 DEBUG 7492 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1d50a7ca]
+2019-07-18 18:59:34.486 DEBUG 7492 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : address
+2019-07-18 18:59:34.486 DEBUG 7492 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : capacity
+2019-07-18 18:59:34.486 DEBUG 7492 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2019-07-18 18:59:34.486 DEBUG 7492 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2019-07-18 18:59:34.486 DEBUG 7492 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.thoughtworks.parking_lot.model.ParkingLot)
+    - Returns
+       - EntityReturnImpl(entity=com.thoughtworks.parking_lot.model.ParkingLot, querySpaceUid=<gen:0>, path=com.thoughtworks.parking_lot.model.ParkingLot)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.thoughtworks.parking_lot.model.ParkingLot)
+          - SQL table alias mapping - parkinglot0_
+          - alias suffix - 0_
+          - suffixed key columns - {name1_0_0_}
+
+2019-07-18 18:59:34.486 DEBUG 7492 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.thoughtworks.parking_lot.model.ParkingLot [PESSIMISTIC_WRITE]: select parkinglot0_.name as name1_0_0_, parkinglot0_.address as address2_0_0_, parkinglot0_.capacity as capacity3_0_0_ from parking_log parkinglot0_ where parkinglot0_.name=? for update
+2019-07-18 18:59:34.503 DEBUG 7492 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2e766822]
+2019-07-18 18:59:34.503 DEBUG 7492 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : address
+2019-07-18 18:59:34.503 DEBUG 7492 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : capacity
+2019-07-18 18:59:34.503 DEBUG 7492 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2019-07-18 18:59:34.503 DEBUG 7492 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2019-07-18 18:59:34.503 DEBUG 7492 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.thoughtworks.parking_lot.model.ParkingLot)
+    - Returns
+       - EntityReturnImpl(entity=com.thoughtworks.parking_lot.model.ParkingLot, querySpaceUid=<gen:0>, path=com.thoughtworks.parking_lot.model.ParkingLot)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.thoughtworks.parking_lot.model.ParkingLot)
+          - SQL table alias mapping - parkinglot0_
+          - alias suffix - 0_
+          - suffixed key columns - {name1_0_0_}
+
+2019-07-18 18:59:34.503 DEBUG 7492 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.thoughtworks.parking_lot.model.ParkingLot [PESSIMISTIC_FORCE_INCREMENT]: select parkinglot0_.name as name1_0_0_, parkinglot0_.address as address2_0_0_, parkinglot0_.capacity as capacity3_0_0_ from parking_log parkinglot0_ where parkinglot0_.name=? for update
+2019-07-18 18:59:34.504 DEBUG 7492 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@28757abd]
+2019-07-18 18:59:34.504 DEBUG 7492 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : address
+2019-07-18 18:59:34.504 DEBUG 7492 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : capacity
+2019-07-18 18:59:34.504 DEBUG 7492 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2019-07-18 18:59:34.504 DEBUG 7492 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2019-07-18 18:59:34.504 DEBUG 7492 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.thoughtworks.parking_lot.model.ParkingLot)
+    - Returns
+       - EntityReturnImpl(entity=com.thoughtworks.parking_lot.model.ParkingLot, querySpaceUid=<gen:0>, path=com.thoughtworks.parking_lot.model.ParkingLot)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.thoughtworks.parking_lot.model.ParkingLot)
+          - SQL table alias mapping - parkinglot0_
+          - alias suffix - 0_
+          - suffixed key columns - {name1_0_0_}
+
+2019-07-18 18:59:34.504 DEBUG 7492 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.thoughtworks.parking_lot.model.ParkingLot [OPTIMISTIC]: select parkinglot0_.name as name1_0_0_, parkinglot0_.address as address2_0_0_, parkinglot0_.capacity as capacity3_0_0_ from parking_log parkinglot0_ where parkinglot0_.name=?
+2019-07-18 18:59:34.504 DEBUG 7492 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3c8a7e38]
+2019-07-18 18:59:34.505 DEBUG 7492 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : address
+2019-07-18 18:59:34.505 DEBUG 7492 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : capacity
+2019-07-18 18:59:34.505 DEBUG 7492 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2019-07-18 18:59:34.505 DEBUG 7492 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2019-07-18 18:59:34.524 DEBUG 7492 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.thoughtworks.parking_lot.model.ParkingLot)
+    - Returns
+       - EntityReturnImpl(entity=com.thoughtworks.parking_lot.model.ParkingLot, querySpaceUid=<gen:0>, path=com.thoughtworks.parking_lot.model.ParkingLot)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.thoughtworks.parking_lot.model.ParkingLot)
+          - SQL table alias mapping - parkinglot0_
+          - alias suffix - 0_
+          - suffixed key columns - {name1_0_0_}
+
+2019-07-18 18:59:34.524 DEBUG 7492 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.thoughtworks.parking_lot.model.ParkingLot [OPTIMISTIC_FORCE_INCREMENT]: select parkinglot0_.name as name1_0_0_, parkinglot0_.address as address2_0_0_, parkinglot0_.capacity as capacity3_0_0_ from parking_log parkinglot0_ where parkinglot0_.name=?
+2019-07-18 18:59:34.524 DEBUG 7492 --- [main] org.hibernate.loader.Loader              : Static select for action ACTION_MERGE on entity com.thoughtworks.parking_lot.model.ParkingLot: select parkinglot0_.name as name1_0_0_, parkinglot0_.address as address2_0_0_, parkinglot0_.capacity as capacity3_0_0_ from parking_log parkinglot0_ where parkinglot0_.name=?
+2019-07-18 18:59:34.524 DEBUG 7492 --- [main] org.hibernate.loader.Loader              : Static select for action ACTION_REFRESH on entity com.thoughtworks.parking_lot.model.ParkingLot: select parkinglot0_.name as name1_0_0_, parkinglot0_.address as address2_0_0_, parkinglot0_.capacity as capacity3_0_0_ from parking_log parkinglot0_ where parkinglot0_.name=?
+2019-07-18 18:59:34.571 DEBUG 7492 --- [main] o.h.query.spi.NamedQueryRepository       : Checking 0 named HQL queries
+2019-07-18 18:59:34.571 DEBUG 7492 --- [main] o.h.query.spi.NamedQueryRepository       : Checking 0 named SQL queries
+2019-07-18 18:59:34.571 DEBUG 7492 --- [main] o.h.internal.SessionFactoryRegistry      : Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@67774e29
+2019-07-18 18:59:34.571 DEBUG 7492 --- [main] o.h.internal.SessionFactoryRegistry      : Registering SessionFactory: bd192a00-1b96-4cd0-ab23-bbc92d700a9c (<unnamed>)
+2019-07-18 18:59:34.571 DEBUG 7492 --- [main] o.h.internal.SessionFactoryRegistry      : Not binding SessionFactory to JNDI, no JNDI name configured
+2019-07-18 18:59:34.571  INFO 7492 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-18 18:59:34.787 DEBUG 7492 --- [main] o.h.stat.internal.StatisticsInitiator    : Statistics initialized [enabled=false]
+2019-07-18 18:59:34.940  INFO 7492 --- [main] c.t.p.R.ParkingLotRepositoryTets         : Started ParkingLotRepositoryTets in 3.458 seconds (JVM running for 4.726)
+2019-07-18 18:59:34.972 DEBUG 7492 --- [main] o.h.e.t.internal.TransactionImpl         : begin
+2019-07-18 18:59:34.972  INFO 7492 --- [main] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@20d28811 testClass = ParkingLotRepositoryTets, testInstance = com.thoughtworks.parking_lot.ReopositoryTest.ParkingLotRepositoryTets@7880cdf3, testMethod = should_find_all_parking_lot@ParkingLotRepositoryTets, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@3967e60c testClass = ParkingLotRepositoryTets, locations = '{}', classes = '{class com.thoughtworks.parking_lot.ApiStackBaseApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@fe18270, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@3e2bcc7d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6483f5ae, [ImportsContextCustomizer@60d8c9b7 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2a40cd94, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@58a90037, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@73a8e994]; rollback [true]
+2019-07-18 18:59:35.088 DEBUG 7492 --- [main] o.h.e.i.DefaultMergeEventListener        : EntityCopyObserver strategy: disallow
+2019-07-18 18:59:35.108 DEBUG 7492 --- [main] org.hibernate.loader.Loader              : Loading entity: [com.thoughtworks.parking_lot.model.ParkingLot#zh parkingLot]
+2019-07-18 18:59:35.114 DEBUG 7492 --- [main] org.hibernate.SQL                        : select parkinglot0_.name as name1_0_0_, parkinglot0_.address as address2_0_0_, parkinglot0_.capacity as capacity3_0_0_ from parking_log parkinglot0_ where parkinglot0_.name=?
+2019-07-18 18:59:35.127 DEBUG 7492 --- [main] org.hibernate.loader.Loader              : Done entity load
+2019-07-18 18:59:35.133 DEBUG 7492 --- [main] o.h.e.i.AbstractSaveEventListener        : Generated identifier: zh parkingLot, using strategy: org.hibernate.id.Assigned
+2019-07-18 18:59:35.141 DEBUG 7492 --- [main] org.hibernate.loader.Loader              : Loading entity: [com.thoughtworks.parking_lot.model.ParkingLot#gz parkingLot]
+2019-07-18 18:59:35.142 DEBUG 7492 --- [main] org.hibernate.SQL                        : select parkinglot0_.name as name1_0_0_, parkinglot0_.address as address2_0_0_, parkinglot0_.capacity as capacity3_0_0_ from parking_log parkinglot0_ where parkinglot0_.name=?
+2019-07-18 18:59:35.142 DEBUG 7492 --- [main] org.hibernate.loader.Loader              : Done entity load
+2019-07-18 18:59:35.142 DEBUG 7492 --- [main] o.h.e.i.AbstractSaveEventListener        : Generated identifier: gz parkingLot, using strategy: org.hibernate.id.Assigned
+2019-07-18 18:59:35.169 DEBUG 7492 --- [main] o.h.q.c.internal.CriteriaQueryImpl       : Rendered criteria query -> select generatedAlias0 from ParkingLot as generatedAlias0
+2019-07-18 18:59:35.182 DEBUG 7492 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : QueryTranslatorFactory : org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@bd3eff4
+2019-07-18 18:59:35.182  INFO 7492 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-07-18 18:59:35.209 DEBUG 7492 --- [main] o.h.h.internal.ast.QueryTranslatorImpl   : parse() - HQL: select generatedAlias0 from com.thoughtworks.parking_lot.model.ParkingLot as generatedAlias0
+2019-07-18 18:59:35.215 DEBUG 7492 --- [main] o.h.hql.internal.ast.ErrorCounter        : throwQueryException() : no errors
+2019-07-18 18:59:35.217 DEBUG 7492 --- [main] o.h.h.internal.ast.QueryTranslatorImpl   : --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       +-[FROM] Node: 'from'
+       |  \-[RANGE] Node: 'RANGE'
+       |     +-[DOT] Node: '.'
+       |     |  +-[DOT] Node: '.'
+       |     |  |  +-[DOT] Node: '.'
+       |     |  |  |  +-[DOT] Node: '.'
+       |     |  |  |  |  +-[IDENT] Node: 'com'
+       |     |  |  |  |  \-[IDENT] Node: 'thoughtworks'
+       |     |  |  |  \-[IDENT] Node: 'parking_lot'
+       |     |  |  \-[IDENT] Node: 'model'
+       |     |  \-[IDENT] Node: 'ParkingLot'
+       |     \-[ALIAS] Node: 'generatedAlias0'
+       \-[SELECT] Node: 'select'
+          \-[IDENT] Node: 'generatedAlias0'
+
+2019-07-18 18:59:35.236 DEBUG 7492 --- [main] o.h.hql.internal.antlr.HqlSqlBaseWalker  : select << begin [level=1, statement=select]
+2019-07-18 18:59:35.249 DEBUG 7492 --- [main] o.h.hql.internal.ast.tree.FromElement    : FromClause{level=1} : com.thoughtworks.parking_lot.model.ParkingLot (generatedAlias0) -> parkinglot0_
+2019-07-18 18:59:35.250 DEBUG 7492 --- [main] o.h.h.i.ast.tree.FromReferenceNode       : Resolved : generatedAlias0 -> parkinglot0_.name
+2019-07-18 18:59:35.251 DEBUG 7492 --- [main] o.h.hql.internal.antlr.HqlSqlBaseWalker  : select : finishing up [level=1, statement=select]
+2019-07-18 18:59:35.252 DEBUG 7492 --- [main] o.h.hql.internal.ast.HqlSqlWalker        : processQuery() :  ( SELECT ( {select clause} parkinglot0_.name ) ( FromClause{level=1} parking_log parkinglot0_ ) )
+2019-07-18 18:59:35.260 DEBUG 7492 --- [main] o.h.hql.internal.ast.util.JoinProcessor  : Using FROM fragment [parking_log parkinglot0_]
+2019-07-18 18:59:35.260 DEBUG 7492 --- [main] o.h.hql.internal.antlr.HqlSqlBaseWalker  : select >> end [level=1, statement=select]
+2019-07-18 18:59:35.261 DEBUG 7492 --- [main] o.h.h.internal.ast.QueryTranslatorImpl   : --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (parking_log)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'parkinglot0_.name as name1_0_' {alias=generatedAlias0, className=com.thoughtworks.parking_lot.model.ParkingLot, tableAlias=parkinglot0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'parkinglot0_.address as address2_0_, parkinglot0_.capacity as capacity3_0_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[parkinglot0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'parking_log parkinglot0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=parking_log,tableAlias=parkinglot0_,origin=null,columns={,className=com.thoughtworks.parking_lot.model.ParkingLot}}
+
+2019-07-18 18:59:35.261 DEBUG 7492 --- [main] o.h.hql.internal.ast.ErrorCounter        : throwQueryException() : no errors
+2019-07-18 18:59:35.266 DEBUG 7492 --- [main] o.h.h.internal.ast.QueryTranslatorImpl   : HQL: select generatedAlias0 from com.thoughtworks.parking_lot.model.ParkingLot as generatedAlias0
+2019-07-18 18:59:35.266 DEBUG 7492 --- [main] o.h.h.internal.ast.QueryTranslatorImpl   : SQL: select parkinglot0_.name as name1_0_, parkinglot0_.address as address2_0_, parkinglot0_.capacity as capacity3_0_ from parking_log parkinglot0_
+2019-07-18 18:59:35.266 DEBUG 7492 --- [main] o.h.hql.internal.ast.ErrorCounter        : throwQueryException() : no errors
+2019-07-18 18:59:35.277 DEBUG 7492 --- [main] o.h.e.i.AbstractFlushingEventListener    : Processing flush-time cascades
+2019-07-18 18:59:35.279 DEBUG 7492 --- [main] o.h.e.i.AbstractFlushingEventListener    : Dirty checking collections
+2019-07-18 18:59:35.280 DEBUG 7492 --- [main] o.h.e.i.AbstractFlushingEventListener    : Flushed: 2 insertions, 0 updates, 0 deletions to 2 objects
+2019-07-18 18:59:35.280 DEBUG 7492 --- [main] o.h.e.i.AbstractFlushingEventListener    : Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2019-07-18 18:59:35.281 DEBUG 7492 --- [main] o.hibernate.internal.util.EntityPrinter  : Listing entities:
+2019-07-18 18:59:35.282 DEBUG 7492 --- [main] o.hibernate.internal.util.EntityPrinter  : com.thoughtworks.parking_lot.model.ParkingLot{address=gz, name=gz parkingLot, capacity=1}
+2019-07-18 18:59:35.282 DEBUG 7492 --- [main] o.hibernate.internal.util.EntityPrinter  : com.thoughtworks.parking_lot.model.ParkingLot{address=zh, name=zh parkingLot, capacity=1}
+2019-07-18 18:59:35.282 DEBUG 7492 --- [main] org.hibernate.engine.spi.ActionQueue     : Changes must be flushed to space: parking_log
+2019-07-18 18:59:35.303 DEBUG 7492 --- [main] org.hibernate.SQL                        : insert into parking_log (address, capacity, name) values (?, ?, ?)
+2019-07-18 18:59:35.316 DEBUG 7492 --- [main] org.hibernate.SQL                        : insert into parking_log (address, capacity, name) values (?, ?, ?)
+2019-07-18 18:59:35.318 DEBUG 7492 --- [main] org.hibernate.SQL                        : select parkinglot0_.name as name1_0_, parkinglot0_.address as address2_0_, parkinglot0_.capacity as capacity3_0_ from parking_log parkinglot0_
+2019-07-18 18:59:35.319 DEBUG 7492 --- [main] org.hibernate.loader.Loader              : Result set row: 0
+2019-07-18 18:59:35.321 DEBUG 7492 --- [main] org.hibernate.loader.Loader              : Result row: EntityKey[com.thoughtworks.parking_lot.model.ParkingLot#zh parkingLot]
+2019-07-18 18:59:35.321 DEBUG 7492 --- [main] org.hibernate.loader.Loader              : Result set row: 1
+2019-07-18 18:59:35.324 DEBUG 7492 --- [main] org.hibernate.loader.Loader              : Result row: EntityKey[com.thoughtworks.parking_lot.model.ParkingLot#gz parkingLot]
+2019-07-18 18:59:35.330 DEBUG 7492 --- [main] o.h.e.t.internal.TransactionImpl         : rolling back
+2019-07-18 18:59:35.332  INFO 7492 --- [main] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@20d28811 testClass = ParkingLotRepositoryTets, testInstance = com.thoughtworks.parking_lot.ReopositoryTest.ParkingLotRepositoryTets@7880cdf3, testMethod = should_find_all_parking_lot@ParkingLotRepositoryTets, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@3967e60c testClass = ParkingLotRepositoryTets, locations = '{}', classes = '{class com.thoughtworks.parking_lot.ApiStackBaseApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@fe18270, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@3e2bcc7d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6483f5ae, [ImportsContextCustomizer@60d8c9b7 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2a40cd94, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@58a90037, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]
+2019-07-18 18:59:35.335  INFO 7492 --- [Thread-2] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@12299890: startup date [Thu Jul 18 18:59:32 CST 2019]; root of context hierarchy
+2019-07-18 18:59:35.338  INFO 7492 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-18 18:59:35.338 DEBUG 7492 --- [Thread-2] o.hibernate.internal.SessionFactoryImpl  : HHH000031: Closing
+2019-07-18 18:59:35.338 DEBUG 7492 --- [Thread-2] org.hibernate.engine.spi.CascadeStyles   : External cascade style registration [persist : STYLE_PERSIST] overrode base registration [STYLE_PERSIST_SKIPLAZY]
+2019-07-18 18:59:35.339 DEBUG 7492 --- [Thread-2] o.h.s.i.AbstractServiceRegistryImpl      : Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+2019-07-18 18:59:35.340 DEBUG 7492 --- [Thread-2] o.h.b.r.i.BootstrapServiceRegistryImpl   : Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries

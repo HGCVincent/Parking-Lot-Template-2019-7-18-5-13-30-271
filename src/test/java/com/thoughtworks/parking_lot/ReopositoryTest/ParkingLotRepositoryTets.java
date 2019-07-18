@@ -42,4 +42,22 @@ public class ParkingLotRepositoryTets {
         assertEquals(0,parkingLotRepository.findAll().size());
     }
 
+    @Test
+    public void should_find_all_parking_lot(){
+        ParkingLot parkingLot = new ParkingLot();
+        parkingLot.setName("zh parkingLot");
+        parkingLot.setAddress("zh");
+        parkingLot.setCapacity(1);
+
+        ParkingLot parkingLot1 = new ParkingLot();
+        parkingLot1.setName("gz parkingLot");
+        parkingLot1.setAddress("gz");
+        parkingLot1.setCapacity(1);
+
+        parkingLotRepository.save(parkingLot);
+        parkingLotRepository.save(parkingLot1);
+
+        assertEquals(2,parkingLotRepository.findAll().size());
+    }
+
 }
