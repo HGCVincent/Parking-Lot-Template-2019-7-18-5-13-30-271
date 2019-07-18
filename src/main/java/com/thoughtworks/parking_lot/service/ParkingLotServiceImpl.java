@@ -2,6 +2,8 @@ package com.thoughtworks.parking_lot.service;
 
 import com.thoughtworks.parking_lot.dao.ParkingLotRepository;
 import com.thoughtworks.parking_lot.model.ParkingLot;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -33,6 +35,11 @@ public class ParkingLotServiceImpl implements ParkingLotService{
     @Override
     public ParkingLot updateParkingLot(ParkingLot parkingLot) {
         return parkingLotRepository.save(parkingLot);
+    }
+
+    @Override
+    public Page<ParkingLot> findAll(Pageable pageable) {
+        return parkingLotRepository.findAll(pageable);
     }
 
 
