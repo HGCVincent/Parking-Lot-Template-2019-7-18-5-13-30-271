@@ -60,4 +60,5 @@ public class ParkingLotRepositoryTets {
         assertEquals(2,parkingLotRepository.findAll().size());
     }
 
+
 }
