@@ -37,10 +37,10 @@ public class ParkingLotServiceImpl implements ParkingLotService{
         return parkingLotRepository.save(parkingLot);
     }
 
-    @Override
-    public Page<ParkingLot> findAll(Pageable pageable) {
-        return parkingLotRepository.findAll(pageable);
-    }
+//    @Override
+//    public Page<ParkingLot> findAll(Pageable pageable) {
+//        return parkingLotRepository.findAll(pageable);
+//    }
 
 
 }

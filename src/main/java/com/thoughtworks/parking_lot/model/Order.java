@@ -10,8 +10,8 @@ public class Order {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @ManyToOne
-    private ParkingLot parkingLot;
+    @Column(name = "parkinglot_id")
+    private int parkingLotId;
 
     @Column(name = "car_number")
     private String carNumber;
@@ -32,12 +32,12 @@ public class Order {
         this.id = id;
     }
 
-    public ParkingLot getParkingLot() {
-        return parkingLot;
+    public int getParkingLotId() {
+        return parkingLotId;
     }
 
-    public void setParkingLot(ParkingLot parkingLot) {
-        this.parkingLot = parkingLot;
+    public void setParkingLotId(int parkingLotId) {
+        this.parkingLotId = parkingLotId;
     }
 
     public String getCarNumber() {

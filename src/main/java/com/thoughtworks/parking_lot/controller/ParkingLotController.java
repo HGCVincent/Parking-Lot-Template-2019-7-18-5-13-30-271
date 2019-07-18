@@ -37,12 +37,12 @@ public class ParkingLotController {
         return parkingLotService.updateParkingLot(parkingLot);
     }
 
-    @GetMapping("/parkingLots/{page}")
-    public Page<ParkingLot> getParkingLotByPageQuery(@PathVariable int page){
-        Pageable pageable = PageRequest.of(page - 1, 15);
-        Page<ParkingLot> ParkingLotPage = parkingLotService.findAll(pageable);
-        return ParkingLotPage;
-    }
+//    @GetMapping("/parkingLots/{page}")
+//    public Page<ParkingLot> getParkingLotByPageQuery(@PathVariable int page){
+//        Pageable pageable = PageRequest.of(page - 1, 15);
+//        Page<ParkingLot> ParkingLotPage = parkingLotService.findAll(pageable);
+//        return ParkingLotPage;
+//    }
 
 
 }

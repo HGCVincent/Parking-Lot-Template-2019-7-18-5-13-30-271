@@ -16,5 +16,5 @@ public interface ParkingLotService {
 
     ParkingLot updateParkingLot(ParkingLot parkingLot);
 
-    Page<ParkingLot> findAll(Pageable pageable);
+//    Page<ParkingLot> findAll(Pageable pageable);
 }
