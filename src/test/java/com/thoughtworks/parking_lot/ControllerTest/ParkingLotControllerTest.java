@@ -1,5 +1,6 @@
 package com.thoughtworks.parking_lot.ControllerTest;
 
+import com.thoughtworks.parking_lot.controller.ParkingLotController;
 import com.thoughtworks.parking_lot.model.ParkingLot;
 import com.thoughtworks.parking_lot.service.ParkingLotService;
 import org.junit.jupiter.api.Test;
@@ -18,8 +19,10 @@ import java.util.List;
 import static org.hamcrest.Matchers.hasSize;
 import static org.hamcrest.Matchers.is;
 import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
@@ -27,7 +30,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 
 @ExtendWith(SpringExtension.class)
-@WebMvcTest(ParkingLot.class)
+@WebMvcTest(ParkingLotController.class)
 public class ParkingLotControllerTest {
     @Autowired
     MockMvc mvc;
@@ -44,13 +47,28 @@ public class ParkingLotControllerTest {
 
         when(parkingLotService.addParkingLot(any())).thenReturn(parkingLot);
         ResultActions result = mvc.perform(post("/parkingLots").contentType(MediaType.APPLICATION_JSON).content("{\n" +
-                "    \"name\": \"zhuhai\",\n" +
-                "    \"capacity\": 1,\n" +
-                "    \"address\": \"zh\"\n" +
+                "\"name\": \"zhuhai\",\n" +
+                "\"capacity\": 1,\n" +
+                "\"address\": \"zh\"\n" +
                 "}"));
 
         result.andExpect(status().isOk()).andExpect(jsonPath("$.name",is("zhuhai"))).andExpect(jsonPath("$.address",is("zh")));
 
-        verify(parkingLotService).addParkingLot(parkingLot);
+        verify(parkingLotService).addParkingLot(any());
+    }
+
+    @Test
+    public void should_delete_parkingLot() throws Exception {
+        String parkingLotJson = "{\n" +
+                "\"name\": \"zhuhai\",\n" +
+                "\"capacity\": 1,\n" +
+                "\"address\": \"zh\"\n" +
+                "}";
+        mvc.perform(post("/parkingLots").contentType(MediaType.APPLICATION_JSON).content(parkingLotJson));
+        mvc.perform(delete("/parkingLots").contentType(MediaType.APPLICATION_JSON).content(parkingLotJson));
+
+        doNothing().when(parkingLotService).deleteParkingLot(any());
+
+        verify(parkingLotService).deleteParkingLot(any());
     }
 }
