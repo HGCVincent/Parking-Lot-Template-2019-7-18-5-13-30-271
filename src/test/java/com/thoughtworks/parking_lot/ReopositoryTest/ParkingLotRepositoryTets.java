@@ -29,4 +29,17 @@ public class ParkingLotRepositoryTets {
         assertEquals("zh parkingLot",result.getName());
     }
 
+    @Test
+    public void should_delete_a_parking_lot() {
+        ParkingLot parkingLot = new ParkingLot();
+        parkingLot.setName("zh parkingLot");
+        parkingLot.setAddress("zh");
+        parkingLot.setCapacity(1);
+
+        ParkingLot result = parkingLotRepository.save(parkingLot);
+        parkingLotRepository.delete(result);
+
+        assertEquals(0,parkingLotRepository.findAll().size());
+    }
+
 }
