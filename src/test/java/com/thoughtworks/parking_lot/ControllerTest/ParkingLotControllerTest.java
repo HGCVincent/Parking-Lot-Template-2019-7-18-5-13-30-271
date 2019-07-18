@@ -22,9 +22,7 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -94,5 +92,27 @@ public class ParkingLotControllerTest {
         verify(parkingLotService).getParkingLotByName(any());
     }
 
+    @Test
+    public void should_update_parkingLot() throws Exception {
+        String parkingLotJson = "{\n" +
+                "\"name\": \"zhuhai\",\n" +
+                "\"capacity\": 1,\n" +
+                "\"address\": \"zh\"\n" +
+                "}";
+
+        String parkingLotJson1 = "{\n" +
+                "\"name\": \"zhuhai1\",\n" +
+                "\"capacity\": 1,\n" +
+                "\"address\": \"zh\"\n" +
+                "}";
+        when(parkingLotService.updateParkingLot(any())).thenReturn(any());
+
+        mvc.perform(post("/parkingLots").contentType(MediaType.APPLICATION_JSON).content(parkingLotJson));
+        ResultActions result = mvc.perform(put("/parkingLots").contentType(MediaType.APPLICATION_JSON).content(parkingLotJson1));
+
+        result.andExpect(status().isOk());
+
+        verify(parkingLotService).updateParkingLot(any());
+    }
 
 }

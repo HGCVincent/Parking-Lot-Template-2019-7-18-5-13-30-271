@@ -1,9 +1,6 @@
 package com.thoughtworks.parking_lot.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
 @Entity
@@ -11,6 +8,9 @@ import javax.validation.constraints.NotNull;
 public class ParkingLot {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+
     @Column(unique = true)
     private String name;
 
@@ -42,5 +42,13 @@ public class ParkingLot {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

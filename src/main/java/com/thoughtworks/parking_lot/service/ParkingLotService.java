@@ -11,4 +11,6 @@ public interface ParkingLotService {
 
 
     ParkingLot getParkingLotByName(String name);
+
+    ParkingLot updateParkingLot(ParkingLot parkingLot);
 }

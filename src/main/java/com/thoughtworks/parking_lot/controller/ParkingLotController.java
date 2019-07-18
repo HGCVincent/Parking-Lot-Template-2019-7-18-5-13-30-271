@@ -28,5 +28,9 @@ public class ParkingLotController {
         return parkingLotService.getParkingLotByName(name);
     }
 
+    @PutMapping("/parkingLots")
+    public ParkingLot updateParkingLot(@RequestBody ParkingLot parkingLot){
+        return parkingLotService.updateParkingLot(parkingLot);
+    }
 
 }
