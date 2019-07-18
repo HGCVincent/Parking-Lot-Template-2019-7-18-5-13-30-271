@@ -5,4 +5,6 @@ import com.thoughtworks.parking_lot.model.Order;
 
 public interface OrderService {
     Order addOrder(String name, String carNumber) throws NoPositionException;
+
+    Order updateOrderByCarNumber(String carNumber);
 }

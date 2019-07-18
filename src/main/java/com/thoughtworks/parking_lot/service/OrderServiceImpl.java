@@ -34,4 +34,12 @@ public class OrderServiceImpl implements OrderService {
             return orderRepository.save(order);
         }
     }
+
+    @Override
+    public Order updateOrderByCarNumber(String carNumber) {
+        Order order = orderRepository.findByCarNumber(carNumber);
+        order.setEndTime(new Timestamp(System.currentTimeMillis()));
+        order.setStatus("close");
+        return order;
+    }
 }

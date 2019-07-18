@@ -23,4 +23,9 @@ public class OrderController {
         }
         return null;
     }
+
+    @PutMapping("/orders/{carNumber}")
+    public Order UpdateOrder(@PathVariable String carNumber){
+        return orderService.updateOrderByCarNumber(carNumber);
+    }
 }

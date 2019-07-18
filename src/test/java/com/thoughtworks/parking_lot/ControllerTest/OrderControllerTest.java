@@ -23,6 +23,7 @@ import static org.hamcrest.Matchers.is;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -56,5 +57,23 @@ public class OrderControllerTest {
         result.andExpect(status().isOk()).andExpect(jsonPath("$.id",is(1231)));
 
         verify(orderService).addOrder(any(),any());
+    }
+
+    @Test
+    public void should_be_close_the_order_when_fetch_Car() throws Exception {
+        ParkingLot parkingLot = new ParkingLot();
+        parkingLot.setCapacity(2);
+        parkingLot.setName("一号");
+        parkingLot.setAddress("珠海");
+        parkingLotService.addParkingLot(parkingLot);
+
+        when(orderService.updateOrderByCarNumber(any())).thenReturn(any());
+
+        mvc.perform(post("/parkingLots/{name}/orders/{carNumber}","一号","粤B 134564"));
+
+        ResultActions result = mvc.perform(delete("/orders/{carNumber}","粤B 134564"));
+        result.andExpect(status().isOk()).andExpect(jsonPath("$.status",is("close")));
+
+        verify(orderService).updateOrderByCarNumber(any());
     }
 }
